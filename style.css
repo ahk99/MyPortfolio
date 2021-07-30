@@ -75,6 +75,41 @@
     .nav-link:hover:after {
         transform: scaleX(1);
     }
+    .row1 {
+        display: none;
+        width: 100%;
+        height: 500px;
+    }
+    .home-content {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        font-family: 'Style Script', cursive;
+        font-weight: 500;
+        font-size: 50px;
+        text-align: start;
+        margin-top: 100px;
+        color: rgb(255, 137, 1);
+    }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(255, 137, 1);
+    }
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: rgb(255, 137, 1);
+    }
+    .home-img {
+        float: right;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(80, 20, 220);
+    }
     @keyframes navitem {
         0% {
             opacity: 0;
@@ -109,7 +144,6 @@
         width: 100%;
         height: 625px;
         background-color: rgb(70, 65, 69);
-        background-size: contain;
     }
     .flm {
         display: none;
@@ -119,14 +153,106 @@
         width: 100%;
         height: 100%;
         justify-content: space-between;
+    }
+    .row1 {
+        display: none;
+        width: 100%;
+        height: 500px;
+    }
+    .home-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    #cl {
+        position: absolute;
+        opacity: 0;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        background-color: rgb(38, 39, 37);
+        margin-left: 220px;
+        margin-top: 100px;
+        animation-name: circleanimate;
+        animation-duration: 0.5s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+    h1 {
+        visibility: hidden;
+        opacity: 0;
+        font-family: 'Style Script', cursive;
+        font-weight: 500;
+        font-size: 70px;
+        text-align: start;
+        margin-top: 100px;
+        color: rgb(255, 137, 1);
+        animation-name: texth1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+    @keyframes texth1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    h2 {
+        visibility: hidden;
+        opacity: 0;
+        width: 610px;
+        position: absolute;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(255, 137, 1);
         z-index: 10;
+        animation-name: texth1;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+    h4 {
+        visibility: hidden;
+        opacity: 0;
+        width: 610px;
+        line-height: 120px;
+        position: absolute;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: rgb(255, 137, 1);
+        z-index: 10;
+        animation-name: texth1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+    .home-img {
+        float: right;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(80, 20, 220);
     }
     #abc {
         display: none;
         width: 0%;
         animation-name: navanimation;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
         animation-fill-mode: forwards;
+    }
+    @keyframes circleanimate {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
     @keyframes navanimation {
         0% {
@@ -144,14 +270,11 @@
             opacity: 1;
         }
     }
-    .navbar-nav {
-        margin-right: 40px;
-    }
     .logoimg {
         opacity: 0;
         animation-name: navitem;
         animation-duration: 2s;
-        animation-delay: 2s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
     }
     .nav-item {
@@ -161,7 +284,7 @@
         opacity: 0;
         animation-name: navitem;
         animation-duration: 2s;
-        animation-delay: 3s;
+        animation-delay: 1.5s;
         animation-fill-mode: forwards;
         padding-left: 30px;
         padding-right: 30px;
