@@ -8,11 +8,6 @@ function shownofl() {
 }
 setTimeout("shownofl()", 3500)
 
-function shownofla() {
-    document.getElementById("flexh").style.display = "flex";
-}
-setTimeout("shownofla()", 6000)
-
 function shownh1() {
     document.getElementById("th1").style.visibility = "visible";
 }
