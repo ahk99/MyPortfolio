@@ -1,247 +1,56 @@
 /*for mobiles*/
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:736px) {
     body {
         width: 100%;
         background-color: rgb(70, 65, 69);
     }
-    .fl {
-        display: none;
-    }
-    .flm {
-        width: 100%;
-        height: 1000px;
-        z-index: 10;
-    }
-    .middle-mobile {
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 50%;
-        height: 180px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        animation-name: fadeout;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-    }
-    #abc {
-        width: 100%;
-    }
-    .navbar {
-        opacity: 0;
-        width: 100%;
-        animation-name: fadein;
-        animation-duration: 2s;
-        animation-delay: 4s;
-        animation-fill-mode: forwards;
-    }
-    .logoimg {
-        opacity: 0;
-        animation-name: fadein;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-    }
     .nav-item {
         padding: 0;
-        width: 100%;
-        opacity: 0;
-        animation-name: navitem;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        padding-left: 30px;
+        width: 160px;
         padding-right: 30px;
         font-family: sans-serif;
         font-weight: 500;
     }
-    .nav-link {
-        position: relative;
+    .container {
+        display: flexbox;
     }
-    .nav-link:after {
-        content: "";
-        position: absolute;
+    .right {
+        margin-top: 70px;
         width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: rgb(255, 137, 1);
-        transform-origin: bottom left;
-        transition: transform 0.2s ease-out;
-    }
-    .nav-link:hover:after {
-        transform: scaleX(1);
-    }
-    .row1 {
-        display: none;
-        width: 100%;
-        height: 500px;
-    }
-    .home-content {
-        float: left;
-        width: 100%;
-        height: 100%;
-    }
-    h1 {
-        font-family: 'Style Script', cursive;
-        font-weight: 500;
-        font-size: 50px;
-        text-align: start;
-        margin-top: 100px;
-        color: rgb(255, 137, 1);
-    }
-    h2 {
-        font-family: 'Roboto', sans-serif;
+        height: fit-content;
         text-align: center;
-        font-size: 25px;
-        color: rgb(255, 137, 1);
-    }
-    h4 {
+        color: rgb(224, 141, 15);
         font-family: 'Roboto', sans-serif;
-        text-align: center;
-        color: rgb(255, 137, 1);
     }
-    .home-img {
-        float: right;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(80, 20, 220);
-    }
-    @keyframes navitem {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes fadeout {
-        100% {
-            opacity: 0;
-        }
-        0% {
-            opacity: 1;
-        }
-    }
-    @keyframes fadein {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
-
-/*for desktop*/
-
-@media only screen and (min-width: 601px) {
-    body {
-        width: 100%;
-        height: 625px;
-        background-color: rgb(70, 65, 69);
-    }
-    .flm {
-        display: none;
-    }
-    .fl {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-    }
-    .row1 {
-        display: none;
-        width: 100%;
-        height: 500px;
-    }
-    .home-content {
-        position: relative;
-        float: left;
-        width: 100%;
-        height: 100%;
-    }
-    #cl {
-        position: absolute;
-        opacity: 0;
+    .myimage {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
         width: 50%;
         height: 50%;
+    }
+    .left {
+        border: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+    #cl {
+        z-index: -1;
+        position: absolute;
+        opacity: 0;
+        width: 40%;
+        height: 23%;
         border-radius: 50%;
         background-color: rgb(38, 39, 37);
-        margin-left: 220px;
-        margin-top: 100px;
+        margin-left: 27%;
+        margin-right: 50%;
+        margin-bottom: 5%;
         animation-name: circleanimate;
         animation-duration: 0.5s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-    }
-    h1 {
-        visibility: hidden;
-        opacity: 0;
-        font-family: 'Style Script', cursive;
-        font-weight: 500;
-        font-size: 70px;
-        text-align: start;
-        margin-top: 100px;
-        color: rgb(255, 137, 1);
-        animation-name: texth1;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-    @keyframes texth1 {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    h2 {
-        visibility: hidden;
-        opacity: 0;
-        width: 610px;
-        position: absolute;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        font-size: 35px;
-        color: rgb(255, 137, 1);
-        z-index: 10;
-        animation-name: texth1;
-        animation-duration: 2.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-    h4 {
-        visibility: hidden;
-        opacity: 0;
-        width: 610px;
-        line-height: 120px;
-        position: absolute;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        color: rgb(255, 137, 1);
-        z-index: 10;
-        animation-name: texth1;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-    .home-img {
-        float: right;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(80, 20, 220);
-    }
-    #abc {
-        display: none;
-        width: 0%;
-        animation-name: navanimation;
-        animation-duration: 0.5s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
     }
     @keyframes circleanimate {
@@ -254,86 +63,121 @@
             opacity: 1;
         }
     }
-    @keyframes navanimation {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 100%;
-        }
+    .scroll,
+    .triangle {
+        display: none;
     }
-    @keyframes navitem {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+}
+
+
+/*for desktop*/
+
+@media only screen and (min-width: 601px) {
+    body {
+        width: 100%;
+        height: 625px;
+        background-color: rgb(70, 65, 69);
     }
     .logoimg {
-        opacity: 0;
-        animation-name: navitem;
-        animation-duration: 2s;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
+        margin-left: 30px;
     }
     .nav-item {
         padding: 0;
         width: 160px;
         text-align: center;
-        opacity: 0;
-        animation-name: navitem;
-        animation-duration: 2s;
-        animation-delay: 1.5s;
-        animation-fill-mode: forwards;
         padding-left: 30px;
         padding-right: 30px;
         font-family: sans-serif;
         font-weight: 500;
     }
-    .nav-link {
-        position: relative;
+    .navitems {
+        margin-left: 530px;
     }
-    .nav-link:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: rgb(255, 137, 1);
-        transition: transform 0.2s ease-out;
+    nav ul li a {
+        color: rgb(255, 197, 7) !important;
+        border-bottom: 2px solid transparent;
     }
-    .nav-link:hover:after {
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+        transition: transform all .5s;
+    }
+    nav ul li a:hover {
+        color: rgb(253, 253, 253) !important;
+        border-bottom: 2px solid rgb(253, 186, 1);
         transform: scaleX(1);
     }
-    .left-black {
-        float: left;
-        width: 683px;
-        height: 625px;
-        animation-name: element;
-        animation-duration: 1.5s;
-        animation-delay: 2s;
-        animation-direction: alternate;
+    .container {
+        display: flex;
+    }
+    h2,
+    h3 {
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .right {
+        margin-left: 120px;
+        margin-top: 70px;
+        width: 50%;
+        height: 50%;
+        color: rgb(224, 141, 15);
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px rgb(95, 93, 91);
+    }
+    .myimage {
+        border-radius: 50%;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+        width: 50%;
+    }
+    .left {
+        width: 50%;
+        height: 50%;
+        border-left: 3px dashed rgb(255, 196, 0);
+    }
+    #cl {
+        z-index: -1;
+        position: absolute;
+        opacity: 0;
+        width: 25%;
+        height: 50%;
+        border-radius: 50%;
+        background-color: rgb(38, 39, 37);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        animation-name: circleanimate;
+        animation-duration: 0.5s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
     }
-    .right-orange {
-        float: right;
-        width: 682px;
-        height: 625px;
-        animation-name: element;
-        animation-duration: 1.5s;
-        animation-delay: 2s;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-    }
-    @keyframes element {
+    @keyframes circleanimate {
         from {
-            width: 683px;
+            transform: scale(0);
+            opacity: 0;
         }
         to {
-            width: 0px;
+            transform: scale(1);
+            opacity: 1;
         }
+    }
+    .scroll {
+        text-align: center;
+        position: absolute;
+        bottom: 15px;
+        right: 120px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .triangle {
+        z-index: -1;
+        position: absolute;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        border-top: 150px solid transparent;
+        border-right: 1366px solid rgb(255, 136, 0);
     }
 }
