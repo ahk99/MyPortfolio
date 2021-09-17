@@ -25,7 +25,7 @@
     }
     .myimage {
         display: block;
-        margin-top: 30px;
+        margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
@@ -66,6 +66,55 @@
     .scroll,
     .triangle {
         display: none;
+    }
+    .rect1 {
+        height: 150px;
+        width: 100%;
+        background-attachment: fixed;
+    }
+    .rectangle {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(255, 136, 0);
+    }
+    .arrowdown {
+        box-sizing: border-box;
+        margin-left: 47%;
+        margin-right: 53%;
+        margin-top: 7px;
+        border: solid rgb(22, 22, 22);
+        height: 5vw;
+        width: 5vw;
+        border-width: 0px 3px 3px 0px;
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: border-width 150ms ease-in-out;
+    }
+    .aboutme {
+        width: 100%;
+        height: fit-content;
+    }
+    .abt-me {
+        text-align: center;
+        color: rgb(255, 136, 0);
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    .carousel-indicators {
+        visibility: hidden;
+    }
+    .carousel .carousel-item {
+        height: 200px;
+    }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -121,9 +170,8 @@
         margin-top: 70px;
         width: 50%;
         height: 50%;
-        color: rgb(224, 141, 15);
+        color: rgb(250, 153, 7);
         font-family: 'Roboto', sans-serif;
-        text-shadow: 2px 2px rgb(95, 93, 91);
     }
     .myimage {
         border-radius: 50%;
@@ -132,11 +180,12 @@
         margin-right: 0;
         display: block;
         width: 50%;
+        box-shadow: 25px 10px 2px rgb(250, 163, 2);
     }
     .left {
         width: 50%;
         height: 50%;
-        border-left: 3px dashed rgb(255, 196, 0);
+        border-left: 2px dashed rgb(255, 145, 0);
     }
     #cl {
         z-index: -1;
@@ -167,9 +216,10 @@
     .scroll {
         text-align: center;
         position: absolute;
-        bottom: 15px;
-        right: 120px;
+        bottom: 30px;
+        right: 150px;
         font-family: 'Poppins', sans-serif;
+        color: rgb(22, 22, 22);
     }
     .triangle {
         z-index: -1;
@@ -178,6 +228,59 @@
         width: 0;
         height: 0;
         border-top: 150px solid transparent;
-        border-right: 1366px solid rgb(255, 136, 0);
+        border-right: 1349px solid rgb(255, 136, 0);
+    }
+    .ab {
+        text-decoration: none;
+        color: rgb(22, 22, 22);
+    }
+    .ab:hover {
+        color: blanchedalmond;
+    }
+    .arrowdown {
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        border: solid rgb(22, 22, 22);
+        height: 3vw;
+        width: 3vw;
+        border-width: 0px 2px 2px 0px;
+        display: inline-block;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: border-width 150ms ease-in-out;
+    }
+    .arrowdown:hover {
+        border-color: blanchedalmond;
+        border-bottom-width: 4px;
+        border-right-width: 4px;
+    }
+    .rectangle,
+    .rect1 {
+        display: none;
+    }
+    .tri {
+        width: 100%;
+        height: 250px;
+    }
+    .aboutme {
+        width: 100%;
+        height: fit-content;
+    }
+    .abt-me {
+        text-align: center;
+        color: rgb(255, 136, 0);
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    .carousel .carousel-item {
+        height: 500px;
+    }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 500px;
+        object-fit: contain;
     }
 }
