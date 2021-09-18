@@ -97,11 +97,17 @@
         width: 100%;
         height: 70px;
     }
-    .abt-me {
+    .abt-me,
+    .prjt,
+    .cntct-me {
         text-align: center;
         color: rgb(255, 136, 0);
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
+    }
+    .prjt,
+    .cntct-me {
+        margin-top: 50px;
     }
     .carousel {
         display: none;
@@ -150,6 +156,101 @@
     .abtmelink {
         text-decoration: none;
         color: rgb(252, 249, 247);
+    }
+    .flex-cards {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-body {
+        background-color: rgb(252, 129, 7)!important;
+        width: 18rem;
+    }
+    .card-img-top {
+        height: 15rem;
+    }
+    .btn {
+        margin-left: 34%;
+        margin-right: 30%;
+    }
+    .line {
+        margin-left: 13%;
+        margin-right: 13%;
+        margin-top: 30px;
+        width: 74%;
+        height: 1px;
+        background-color: rgb(252, 129, 7);
+    }
+    .rowflex {
+        margin-top: 50px;
+        width: 100%;
+        height: fit-content;
+        display: flexbox;
+        justify-content: space-around;
+    }
+    .col1,
+    .col2 {
+        padding: 10px 50px 10px 50px;
+        width: 40%;
+    }
+    .formlabel,
+    .formmessage {
+        color: rgb(255, 115, 0);
+        font-weight: 600;
+    }
+    .form-text,
+    .form-email {
+        width: 200px;
+        background-color: rgb(70, 65, 69);
+        border: 2px solid rgb(255, 115, 0);
+        border-radius: 15px;
+    }
+    .message {
+        width: fit-content;
+        height: fit-content;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+    .formtextarea {
+        display: none;
+    }
+    .formtextareamob {
+        background-color: rgb(70, 65, 69);
+        border: 2px solid rgb(255, 115, 0);
+        border-radius: 15px;
+    }
+    .btn-primary {
+        margin-top: 40px;
+        margin-left: 40%;
+        font-weight: 600;
+        color: rgb(58, 58, 56);
+        background-color: rgb(255, 115, 0);
+        border-color: rgb(255, 115, 0);
+    }
+    .btn-primary:hover {
+        background-color: rgb(58, 58, 56);
+        color: rgb(255, 115, 0);
+        border-color: rgb(255, 115, 0);
+    }
+    .footer {
+        z-index: -1;
+        width: 100%;
+        height: 100px;
+        background-color: #212529;
+        margin-top: 70px;
+    }
+    .icons {
+        width: 100%;
+        margin-top: 30px;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .fb,
+    .gmail,
+    .insta,
+    .git {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -298,15 +399,22 @@
         width: 100%;
         height: 300px;
     }
-    .aboutme {
+    .aboutme,
+    .project {
         width: 100%;
         height: 100px;
     }
-    .abt-me {
+    .abt-me,
+    .prjt,
+    .cntct-me {
         text-align: center;
         color: rgb(255, 136, 0);
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
+    }
+    .prjt,
+    .cntct-me {
+        margin-top: 50px;
     }
     .carousel .carousel-item {
         height: 500px;
@@ -346,5 +454,112 @@
     }
     .abtmemob {
         display: none;
+    }
+    .slide2title,
+    .slide3title {
+        margin-left: 250px;
+        text-align: start;
+        color: rgb(252, 129, 7);
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    .abtmelink {
+        text-decoration: none;
+        color: rgb(252, 249, 247);
+    }
+    .line {
+        margin-left: 13%;
+        margin-right: 13%;
+        width: 74%;
+        height: 1px;
+        background-color: rgb(255, 102, 0);
+        margin-top: 50px;
+    }
+    .flex-cards {
+        display: flex;
+        justify-content: space-around;
+    }
+    .card-body {
+        background-color: rgb(252, 129, 7)!important;
+        width: 18rem;
+    }
+    .card-img-top {
+        height: 15rem;
+    }
+    .btn {
+        margin-left: 34%;
+        margin-right: 30%;
+    }
+    .rowflex {
+        margin-top: 50px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+    }
+    .col1,
+    .col2 {
+        padding: 10px 50px 10px 50px;
+        width: 40%;
+    }
+    .formlabel,
+    .formmessage {
+        color: rgb(255, 115, 0);
+        font-weight: 600;
+    }
+    .form-text,
+    .form-email {
+        width: 100%;
+        background-color: rgb(70, 65, 69);
+        border: 2px solid rgb(255, 115, 0);
+        border-radius: 15px;
+    }
+    .message {
+        width: fit-content;
+        height: fit-content;
+        margin-left: 25%;
+        margin-top: 40px;
+    }
+    .formtextarea {
+        background-color: rgb(70, 65, 69);
+        border: 2px solid rgb(255, 115, 0);
+        border-radius: 15px;
+    }
+    .btn-primary {
+        margin-top: 40px;
+        margin-left: 50%;
+        font-weight: 600;
+        color: rgb(58, 58, 56);
+        background-color: rgb(255, 115, 0);
+        border-color: rgb(255, 115, 0);
+    }
+    .btn-primary:hover {
+        background-color: rgb(58, 58, 56);
+        color: rgb(255, 115, 0);
+        border-color: rgb(255, 115, 0);
+    }
+    .formtextareamob {
+        display: none;
+    }
+    .footer {
+        z-index: -1;
+        width: 100%;
+        height: 100px;
+        background-color: #212529;
+        margin-top: 70px;
+    }
+    .icons {
+        width: 400px;
+        margin-top: 30px;
+        margin-left: 38%;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .fb,
+    .gmail,
+    .insta,
+    .git {
+        width: 40px;
+        height: 40px;
     }
 }
