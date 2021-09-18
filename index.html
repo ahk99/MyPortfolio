@@ -53,10 +53,10 @@
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="#abt-me">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Project</a>
+                <a class="nav-link" href="#project">Project</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">Contact me</a>
@@ -83,16 +83,16 @@
 
 <div class="tri">
 <div class="triangle"></div>
-<h2 class="scroll">Know more <a class="ab" href="#">about me</a>
-<a data-scroll href="#"><div class="arrowdown"></div></a>
+<h2 class="scroll">Know more <a class="ab" href="#abt-me">about me</a>
+<a data-scroll href="#abt-me"><div class="arrowdown"></div></a>
 </h2></div>
 
 <div class="rect1">
 <div class="rectangle">
-<a data-scroll href="#"><div class="arrowdown"></div></a>
+<a data-scroll href="#abt-me"><div class="arrowdown"></div></a>
 </div></div>
 
-<div class="aboutme"><h1 class="abt-me">ABOUT ME</h1></div>
+<div class="aboutme"><h1 class="abt-me" id="abt-me">ABOUT ME</h1></div>
 
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -103,13 +103,34 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/flower.jpg" class="d-block w-100" alt="...">
+      <img src="../assets/slide 1.jpg" class="d-block w-100" class="slide1" alt="...">
+      <div class="abtmelist">
+        <ul class="mainul">
+          <li class="mainli">Being able to pursue interesting, high-quality work that has a positive impact.</li>
+          <li class="mainli">Securing awards, promotions and other acknowledgements of achievement.</li>
+          <li class="mainli">Exercising leadership, authority and influence.</li>
+          <li class="mainli">Having a positive effect on and engagement with others.</li>
+          <li class="mainli">Demonstrating authenticity, integrity and roundedness.</li>
+        </ul>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/navlogo.jpg" class="d-block w-100" alt="...">
+      <img src="../assets/slide 2.jpg" class="d-block w-100" alt="college">
+      <div class="abtmeslide2">
+        <h2 class="slide2title">Education<h2>
+        <ul class="mainul">
+          <li class="mainli">Btech in Computer Science from <a class="abtmelink" href="https://stthomaskannur.ac.in/stm2/home">St Thomas College of Engineering and technology</a><br><a class="abtmelink" href="https://ktu.edu.in/home.htm;jsessionid=AF48A110499D61352CEF6F163D23245D">Univerisity: APJ Abdul Kalam Technological Univeristy</a></li>
+        </ul>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/navlogo.jpg" class="d-block w-100" alt="...">
+      <img src="../assets/slide 3.png" class="d-block w-100" alt="school">
+      <div class="abtmeslide3">
+        <h2 class="slide3title">Education<h2>
+        <ul class="mainul">
+          <li class="mainli">10th and 10+2 from <a class="abtmelink" href="https://sreepuramems.org/">Sreepuram EMHS and Jr. College</a><br><a class="abtmelink" href="https://www.cisce.org/">Board: Council for the Indian School Certificate Examinations</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -120,6 +141,77 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+
+<div class="abtmemob">
+  <div class="abtmelist">
+    <ul class="mainul">
+        <li class="mainli">Being able to pursue interesting, high-quality work that has a positive impact.</li>
+        <li class="mainli">Securing awards, promotions and other acknowledgements of achievement.</li>
+        <li class="mainli">Exercising leadership, authority and influence.</li>
+        <li class="mainli">Having a positive effect on and engagement with others.</li>
+        <li class="mainli">Demonstrating authenticity, integrity and roundedness.</li>
+      </ul>
+  </div>
+  <div class="edu"><h2 class="edutitle">Education<h3></div>
+  <div class="edu1">
+    <ul class="mainul">
+      <li class="mainli">Btech in Computer Science from <a class="abtmelink" href="https://stthomaskannur.ac.in/stm2/home">St Thomas College of Engineering and technology</a><br><a class="abtmelink" href="https://ktu.edu.in/home.htm;jsessionid=AF48A110499D61352CEF6F163D23245D">Univerisity: APJ Abdul Kalam Technological Univeristy</a></li>
+    </ul>
+  </div>
+  <div class="edu2">
+    <ul class="mainul">
+      <li class="mainli">10th and 10+2 from <a class="abtmelink" href="https://sreepuramems.org/">Sreepuram EMHS and Jr. College</a><br><a class="abtmelink" href="https://www.cisce.org/">Board: Council for the Indian School Certificate Examinations</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="line"></div>
+
+
+<div class="project" id="project"><h1 class="prjt" id="prjt">PROJECTS</h1></div>
+<div class="flex-cards">
+<div class="card" >
+  <img src="../assets/project1js.png" class="card-img-top" alt="project1">
+  <div class="card-body">
+    <h5 class="card-title">Javascript Beginner</h5>
+    <p class="card-text">Some quick javascript beginner level projects.</p>
+    <a href="https://ahk99.github.io/Javascript/" class="btn btn-dark">Explore</a>
+  </div>
+</div></div>
+
+<div class="line"></div>
+
+<div class="contactme" id="contactme"><h1 class="cntct-me" id="cntct-me">CONTACT ME</h1></div>
+
+  <form>
+    <div class="rowflex">
+      <div class="col1">
+        <label class="formlabel">Name</label><br><br>
+        <input type="text" class="form-text">
+      </div>
+      <div class="col2">
+        <label class="formlabel">Email</label><br><br>
+        <input type="Email" class="form-email">
+      </div>
+    </div>
+    <div class="message">
+    <label class="formmessage">Message</label><br><br>
+      <textarea rows="4" cols="100" name="comment" form="usrform" class="formtextarea">
+</textarea>
+      <textarea rows="4" cols="40" name="comment" form="usrform" class="formtextareamob">
+</textarea>
+</div>
+  </form>
+  <button type="submit" form="nameform" value="Submit" class="btn btn-primary">Submit</button>
+  <div class="line"></div>
+<div class="footer">
+  <div class="icons">
+    <a href="https://www.facebook.com/anagha.harikrishnan"><img src="../assets/facebook.png" class="fb"></a>
+    <a href = "mailto: anghaharikrishnan5@gmail.com"><img src="../assets/gmail.png" class="gmail"></a>
+    <a href="https://www.instagram.com/anagha_harikrishnan/"><img src="../assets/instagram.png" class="insta"></a>
+    <a href="https://github.com/ahk99"><img src="../assets/github.png" class="git"></a>
+  </div>
 </div>
 
     <script
