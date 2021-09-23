@@ -79,6 +79,9 @@
         height: 50px;
         background-color: rgb(255, 136, 0);
     }
+    .rectangle a {
+        width: 300px;
+    }
     .arrowdown {
         box-sizing: border-box;
         margin-left: 47%;
@@ -200,7 +203,7 @@
     }
     .form-text,
     .form-email {
-        width: 200px;
+        width: 300px;
         background-color: rgb(70, 65, 69);
         border: 2px solid rgb(255, 115, 0);
         border-radius: 15px;
@@ -232,6 +235,18 @@
         color: rgb(255, 115, 0);
         border-color: rgb(255, 115, 0);
     }
+    textarea,
+    .form-text,
+    .form-email {
+        padding-left: 20px;
+        color: blanchedalmond;
+        font-size: 18px;
+    }
+    textarea:focus,
+    input:focus {
+        color: blanchedalmond;
+        outline: none;
+    }
     .footer {
         z-index: -1;
         width: 100%;
@@ -252,6 +267,83 @@
         width: 40px;
         height: 40px;
     }
+    .menu {
+        z-index: 1;
+        visibility: hidden;
+        position: fixed;
+        bottom: 70px;
+        margin-left: 38%;
+        width: 200px;
+        height: 180px;
+        background-color: rgb(255, 145, 0);
+        opacity: 0.8;
+        border: 2px solid black;
+        border-radius: 26px;
+        border-top-left-radius: 50%;
+    }
+    .floating-button {
+        margin-top: 126px;
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(255, 145, 0);
+    }
+    #flb {
+        visibility: hidden;
+        border: 5px solid black;
+    }
+    .floating-button img {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .floating-buttondefault {
+        z-index: 1;
+        position: fixed;
+        bottom: 72px;
+        right: 38px;
+        margin-top: 126px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(255, 145, 0);
+    }
+    .floating-buttondefault img {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .menuitems {
+        width: 100%;
+        height: 100%;
+        margin-top: 12px;
+    }
+    .menuitems ul {
+        list-style-type: none;
+        line-height: 37px;
+    }
+    .item1 {
+        padding-left: 70px;
+    }
+    .item2 {
+        padding-left: 20px;
+    }
+    .item3 {
+        padding-left: 5px;
+    }
+    .item4 {
+        padding-left: 20px;
+    }
+    .menuitems ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    .menuitems ul li:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -259,6 +351,7 @@
 
 @media only screen and (min-width: 601px) {
     body {
+        z-index: -1;
         width: 100%;
         height: 625px;
         background-color: rgb(70, 65, 69);
@@ -513,6 +606,8 @@
         background-color: rgb(70, 65, 69);
         border: 2px solid rgb(255, 115, 0);
         border-radius: 15px;
+        height: 30px;
+        margin: 0;
     }
     .message {
         width: fit-content;
@@ -541,6 +636,18 @@
     .formtextareamob {
         display: none;
     }
+    textarea,
+    .form-text,
+    .form-email {
+        padding-left: 20px;
+        color: blanchedalmond;
+        font-size: 18px;
+    }
+    textarea:focus,
+    input:focus {
+        color: blanchedalmond;
+        outline: none;
+    }
     .footer {
         z-index: -1;
         width: 100%;
@@ -561,5 +668,82 @@
     .git {
         width: 40px;
         height: 40px;
+    }
+    .menu {
+        z-index: 1;
+        visibility: hidden;
+        position: fixed;
+        bottom: 0;
+        margin-left: 80%;
+        width: 200px;
+        height: 180px;
+        background-color: rgb(255, 145, 0);
+        opacity: 0.8;
+        border: 2px solid black;
+        border-radius: 26px;
+        border-top-left-radius: 50%;
+    }
+    .floating-button {
+        margin-top: 126px;
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(255, 145, 0);
+    }
+    #flb {
+        visibility: hidden;
+        border: 5px solid black;
+    }
+    .floating-button img {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .floating-buttondefault {
+        z-index: 1;
+        position: fixed;
+        bottom: 2px;
+        right: 72px;
+        margin-top: 126px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(255, 145, 0);
+    }
+    .floating-buttondefault img {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .menuitems {
+        width: 100%;
+        height: 100%;
+        margin-top: 12px;
+    }
+    .menuitems ul {
+        list-style-type: none;
+        line-height: 37px;
+    }
+    .item1 {
+        padding-left: 70px;
+    }
+    .item2 {
+        padding-left: 20px;
+    }
+    .item3 {
+        padding-left: 5px;
+    }
+    .item4 {
+        padding-left: 20px;
+    }
+    .menuitems ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    .menuitems ul li:hover {
+        text-decoration: underline;
     }
 }
